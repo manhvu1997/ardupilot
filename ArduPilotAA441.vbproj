@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2559A516-ACF8-4B22-BC0C-48D24C7712E7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ArduPilotAA441</RootNamespace>
+    <AssemblyName>ArduPilotAA441</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Empty</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Arduplane1\createTags" />
+    <None Include="Arduplane1\Makefile.waf" />
+    <None Include="Arduplane1\wscript" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="My Project\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Arduplane1\afs_plane.cpp" />
+    <Content Include="Arduplane1\afs_plane.h" />
+    <Content Include="Arduplane1\altitude.cpp" />
+    <Content Include="Arduplane1\AP_Arming.cpp" />
+    <Content Include="Arduplane1\AP_Arming.h" />
+    <Content Include="Arduplane1\ArduPlane.cpp" />
+    <Content Include="Arduplane1\Attitude.cpp" />
+    <Content Include="Arduplane1\avoidance_adsb.cpp" />
+    <Content Include="Arduplane1\avoidance_adsb.h" />
+    <Content Include="Arduplane1\commands.cpp" />
+    <Content Include="Arduplane1\commands_logic.cpp" />
+    <Content Include="Arduplane1\config.h" />
+    <Content Include="Arduplane1\control_modes.cpp" />
+    <Content Include="Arduplane1\defines.h" />
+    <Content Include="Arduplane1\events.cpp" />
+    <Content Include="Arduplane1\failsafe.cpp" />
+    <Content Include="Arduplane1\GCS_Mavlink.cpp" />
+    <Content Include="Arduplane1\GCS_Mavlink.h" />
+    <Content Include="Arduplane1\GCS_Plane.cpp" />
+    <Content Include="Arduplane1\GCS_Plane.h" />
+    <Content Include="Arduplane1\geofence.cpp" />
+    <Content Include="Arduplane1\is_flying.cpp" />
+    <Content Include="Arduplane1\Log.cpp" />
+    <Content Include="Arduplane1\mode.cpp" />
+    <Content Include="Arduplane1\mode.h" />
+    <Content Include="Arduplane1\mode_acro.cpp" />
+    <Content Include="Arduplane1\mode_auto.cpp" />
+    <Content Include="Arduplane1\mode_autotune.cpp" />
+    <Content Include="Arduplane1\mode_avoidADSB.cpp" />
+    <Content Include="Arduplane1\mode_circle.cpp" />
+    <Content Include="Arduplane1\mode_cruise.cpp" />
+    <Content Include="Arduplane1\mode_fbwa.cpp" />
+    <Content Include="Arduplane1\mode_fbwb.cpp" />
+    <Content Include="Arduplane1\mode_guided.cpp" />
+    <Content Include="Arduplane1\mode_initializing.cpp" />
+    <Content Include="Arduplane1\mode_loiter.cpp" />
+    <Content Include="Arduplane1\mode_manual.cpp" />
+    <Content Include="Arduplane1\mode_qacro.cpp" />
+    <Content Include="Arduplane1\mode_qautotune.cpp" />
+    <Content Include="Arduplane1\mode_qhover.cpp" />
+    <Content Include="Arduplane1\mode_qland.cpp" />
+    <Content Include="Arduplane1\mode_qloiter.cpp" />
+    <Content Include="Arduplane1\mode_qrtl.cpp" />
+    <Content Include="Arduplane1\mode_qstabilize.cpp" />
+    <Content Include="Arduplane1\mode_rtl.cpp" />
+    <Content Include="Arduplane1\mode_stabilize.cpp" />
+    <Content Include="Arduplane1\mode_takeoff.cpp" />
+    <Content Include="Arduplane1\mode_training.cpp" />
+    <Content Include="Arduplane1\motor_test.cpp" />
+    <Content Include="Arduplane1\navigation.cpp" />
+    <Content Include="Arduplane1\parachute.cpp" />
+    <Content Include="Arduplane1\Parameters.cpp" />
+    <Content Include="Arduplane1\Parameters.h" />
+    <Content Include="Arduplane1\Plane.cpp" />
+    <Content Include="Arduplane1\Plane.h" />
+    <Content Include="Arduplane1\qautotune.cpp" />
+    <Content Include="Arduplane1\qautotune.h" />
+    <Content Include="Arduplane1\quadplane.cpp" />
+    <Content Include="Arduplane1\quadplane.h" />
+    <Content Include="Arduplane1\radio.cpp" />
+    <Content Include="Arduplane1\RC_Channel.cpp" />
+    <Content Include="Arduplane1\RC_Channel.h" />
+    <Content Include="Arduplane1\release-notes.txt" />
+    <Content Include="Arduplane1\reverse_thrust.cpp" />
+    <Content Include="Arduplane1\sensors.cpp" />
+    <Content Include="Arduplane1\servos.cpp" />
+    <Content Include="Arduplane1\soaring.cpp" />
+    <Content Include="Arduplane1\system.cpp" />
+    <Content Include="Arduplane1\tailsitter.cpp" />
+    <Content Include="Arduplane1\takeoff.cpp" />
+    <Content Include="Arduplane1\tiltrotor.cpp" />
+    <Content Include="Arduplane1\tuning.cpp" />
+    <Content Include="Arduplane1\tuning.h" />
+    <Content Include="Arduplane1\version.cpp" />
+    <Content Include="Arduplane1\version.h" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
